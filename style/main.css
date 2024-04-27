@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(../photoes/101.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 16px;
+    animation: changing_background 3sec ease 0 infinite;
+}
+
+.navitem {
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.navitem:hover {
+    scale: 1.15;
+    color: black;
+    background-color: gold;
+    border-radius: 25px;
+}
+
+#tagline {
+    color: white;
+    text-align: center;
+}
+
+.leftouter {
+    background-color: aqua;
+    width: 5px;
+    height: 100%;
+}
+
+.leftinner {
+    animation: left 3s ease-in-out none infinite;
+    width: 5px;
+    background-color: orange;
+}
+
+#tagline {
+    animation: tagscale 2s ease infinite;
+}
+
+@keyframes tagscale {
+    0% {
+        scale: 1;
+        border: 6px solid red;
+    }
+
+    25% {
+        scale: 0.8;
+        border: 6px solid yellow;
+    }
+
+    50% {
+        scale: 1;
+        border: 6px solid blue;
+    }
+
+    75% {
+        scale: 0.8;
+        border: 6px solid greenyellow;
+    }
+
+    100% {
+        scale: 1;
+        border: 6px solid red;
+    }
+}
+
+.input_filed {
+    color: black;
+    background-color: rgb(170, 255, 255);
+    border: none;
+    font-size: large;
+    text-align: center;
+}
+
+.bgcard {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../photoes/107.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+@keyframes left {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0vw;
+    }
+}
+
+.rightouter {
+    background-color: orange;
+    width: 5px;
+    height: 100%;
+}
+
+.rightinner {
+    animation: right 3s ease-in-out none infinite;
+    width: 5px;
+    background-color: aqua;
+}
+
+@keyframes right {
+    0% {
+        height: 0vw;
+        background-color: chartreuse;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+#tagline {
+    border: 4px solid white;
+    width: fit-content;
+}
+
+.bgnote {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../photoes/navbar_back.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+
+@media (max-width:385px) {
+    #tagline {
+        font-size: 18px;
+    }
+
+    .questionare {
+        color: white;
+        font-size: 12px;
+    }
+
+    .mainphoto {
+        height: 175px;
+    }
+}
+
+@media (min-width:386px) {
+    #tagline {
+        font-size: medium;
+    }
+
+    .questionare {
+        color: white;
+        font-size: medium;
+    }
+
+    .mainphoto {
+        height: 200px;
+    }
+}
+
+@media (min-width:577px) {
+    #tagline {
+        font-size: 36px;
+    }
+
+    .questionare {
+        color: white;
+        font-size: large;
+    }
+
+    .mainphoto {
+        height: 200px;
+    }
+}
+
+@media (min-width:720px) {
+    #tagline {
+        font-size: 42px;
+    }
+
+    .questionare {
+        color: white;
+        font-size: large;
+    }
+
+    .mainphoto {
+        height: 250px;
+    }
+}
+
+@media (min-width:960px) {
+    #tagline {
+        font-size: 60px;
+    }
+
+    .questionare {
+        color: white;
+        font-size: x-large;
+    }
+
+    .mainphoto {
+        height: 250px;
+
+    }
+}
+
+
+.boraround {
+    animation: borrrr 1s ease none infinite;
+}
+
+@keyframes borrrr {
+    0% {
+        border: 7px solid rgb(100, 247, 247);
+    }
+
+    25% {
+        border: 7px solid rgb(255, 255, 115);
+    }
+
+    50% {
+
+        border: 7px solid rgb(254, 95, 95);
+    }
+
+    75% {
+
+        border: 7px solid rgb(254, 254, 103);
+    }
+
+    100% {
+        border: 7px solid rgb(103, 255, 255);
+    }
+}

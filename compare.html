@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/old.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-black px-5 py-2 mynavbar sticky-top" style="
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(photoes/navbar_back.jpg);
+    z-index: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+        <a class="nav-link" href="index.html" style="color: aqua;font-size: 35px;">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"
+                style="border-radius: 50%;border: 3px solid white;background-color: aqua;"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar" style="padding-left: 17px;">
+            <ul class="navbar-nav navlist">
+                <li class="nav-item">
+                    <a class="nav-link navitem" href="old.html">Old tax slab before 2023</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navitem" href="new.html">New tax slab till March 2023</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navitem" href="latest.html">Latest Slabs after March 2023</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navitem" href="#comparecalci">Compare all</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid p-3">
+        <div class="container-fluid p-3" id="tagline" style="font-family: cursive;">Compare all slab</div>
+        <div class="container p-3">
+            <div style="text-align: center;">
+                <!-- <img src="photoes/confused.jpeg" style="width: 60%;"> -->
+                <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Income slab</th>
+                        <th scope="col">old slab rates</th>
+                        <th scope="col">New slab rates</th>
+                        <th scope="col">Latest slab rates</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Upto 2.5 lakh</th>
+                        <td>Nil</td>
+                        <td>Nil</td>
+                        <td>Nil</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2.5 lakh to 3 lakh</th>
+                        <td>5 percent</td>
+                        <td>5 percent</td>
+                        <td>Nil</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3 lakh to 5 lakh</th>
+                        <td>5 percent</td>
+                        <td>5 percent</td>
+                        <td>5 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5 lakh to 6 lakh</th>
+                        <td>20 percent</td>
+                        <td>10 percent</td>
+                        <td>5 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6 lakh to 7.5 lakh</th>
+                        <td>20 percent</td>
+                        <td>10 percent</td>
+                        <td>10 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7.5 lakh to 9 lakh</th>
+                        <td>20 percent</td>
+                        <td>15 percent</td>
+                        <td>10 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9 lakh to 10 lakh</th>
+                        <td>20 percent</td>
+                        <td>15 percent</td>
+                        <td>15 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10 lakh to 12 lakh</th>
+                        <td>30 percent</td>
+                        <td>20 percent</td>
+                        <td>15 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12 lakh to 12.5 lakh</th>
+                        <td>30 percent</td>
+                        <td>20 percent</td>
+                        <td>20 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12.5 lakh to 15 lakh</th>
+                        <td>30 percent</td>
+                        <td>25 percent</td>
+                        <td>20 percent</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">above 15 lakh</th>
+                        <td>30 percent</td>
+                        <td>30 percent</td>
+                        <td>30 percent</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Anual CTC </h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">House rent alowance : </h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Leave travel alowance</h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input3">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Income from rent in positive, loan payments in negative
+                        </h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Income from any other sources</h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input5">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Savings in PF, LIC, Tution fees of children, PPF, NSC</h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input6">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Savings in mediclaim</h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input7">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12 p-3 ">
+                <div class="card bgcard boraround" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">child tution fees</h5>
+                        <input class="input_filed" type="number" placeholder="Enter" style="width: 40%;" id="input8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 7px;margin-bottom: 7px;"><button type="submit" class="btn btn-primary"
+                onclick="getval()">Submit</button>
+        </p>
+
+        <span id="comparecalci"></span>
+            <hr>
+        </span>
+        <div id="conclusion" style="text-align: center;"></div>
+    </div>
+
+
+    <script src="script/compare.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
